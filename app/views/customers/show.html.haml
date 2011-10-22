@@ -1,36 +1,27 @@
 %p#notice= notice
 
+- if @customer.is_company
+  %h2= "Company: " + @customer.username
+- else
+  %h2= "User: " + @customer.username
+
 %p
-  %b Username:
-  = @customer.username
-%p
-  %b First name:
-  = @customer.first_name
-%p
-  %b Last name:
-  = @customer.last_name
+  %b Full name:
+  = @customer.first_name + " " +  @customer.last_name
 %p
   %b Email:
-  = @customer.email
-%p
-  %b Fon country:
-  = @customer.fon_country
-%p
-  %b Fon city:
-  = @customer.fon_city
+  = @customer.is_company ? @customer.email : "N / A"
 %p
   %b Fon:
-  = @customer.fon
+  = format_phone_number(@customer.fon_country, @customer.fon_city, @customer.fon)
 %p
-  %b Twitter name:
-  = @customer.twitter_name
+  %b= @customer.twitter_name.present? ? twitter_link(@customer.twitter_name) : "N / A"
+
 %p
   %b Image:
-  = @customer.image
-%p
-  %b Is company:
-  = @customer.is_company
+  = image_tag(@customer.image, :height => '64')
 
 = link_to 'Edit', edit_customer_path(@customer)
 \|
 = link_to 'Back', customers_path
+
