@@ -8,5 +8,13 @@ module CustomersHelper
     link_to "@" + name, "http://twitter.com/#!/#{name}"
   end
 
+  def customer_image(customer)
+    if customer.image.present?
+      customer.image
+    else
+      "rails.png"
+    end
+  end
+
 end
 

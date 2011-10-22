@@ -1,0 +1,52 @@
+/* CSS Styles for the Customer view */
+
+
+.cus_bit {
+  font-size: 12pt;
+  width: 450px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.cus_head {
+  font-size: 18pt;
+  font-weight: bold;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+.cus_img {
+  width: 450px;
+  text-align: right;
+  padding: 10px;
+  margin: 0 0 0 20px;
+}
+
+.cus_nav {
+  font-size: 12pt;
+  font-weight: bold;
+  width: 470px;
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 0 0 0 20px;
+}
+
+dl {
+  margin-bottom: 40px;
+}
+
+dl dt {
+  font-style: italic;
+  float: left;
+  margin-right: 20px;
+  padding: 10px;
+  width: 120px;
+}
+
+dl dd {
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 0 0 20px;
+}
+

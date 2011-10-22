@@ -1,27 +1,30 @@
-%p#notice= notice
 
-- if @customer.is_company
-  %h2= "Company: " + @customer.username
-- else
-  %h2= "User: " + @customer.username
+.cus_bit
 
-%p
-  %b Full name:
-  = @customer.first_name + " " +  @customer.last_name
-%p
-  %b Email:
-  = @customer.is_company ? @customer.email : "N / A"
-%p
-  %b Fon:
-  = format_phone_number(@customer.fon_country, @customer.fon_city, @customer.fon)
-%p
-  %b= @customer.twitter_name.present? ? twitter_link(@customer.twitter_name) : "N / A"
+  .cus_head
+    - if @customer.is_company
+      = "Company: " + @customer.username
+    - else
+      = "User: " + @customer.username
 
-%p
-  %b Image:
-  = image_tag(@customer.image, :height => '64') if @customer.image.present?
+    .cus_img
+      = image_tag(customer_image(@customer), :height => '64')
 
-= link_to 'Edit', edit_customer_path(@customer)
-\|
-= link_to 'Back', customers_path
+  %dl
+    %dt Full name:
+    %dd= @customer.first_name + " " +  @customer.last_name
+
+    %dt Email:
+    %dd= @customer.is_company ? @customer.email : "N / A"
+
+    %dt Fon:
+    %dd= format_phone_number(@customer.fon_country, @customer.fon_city, @customer.fon)
+
+    %dt Twitter:
+    %dd= @customer.twitter_name.present? ? twitter_link(@customer.twitter_name) : "N / A"
+
+.cus_nav
+  = link_to 'Edit', edit_customer_path(@customer)
+  \|
+  = link_to 'Back', customers_path
 
