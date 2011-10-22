@@ -41,17 +41,15 @@ Ryan Bates has put together an excellent RailsCast on Draper based on the 0.8.0 
 
 [![RailsCast #286](https://img.skitch.com/20111021-dgxmqntq22d37fthky6pttk59n.jpg "RailsCast #286 - Draper")](http://railscasts.com/episodes/286-draper)
 
-And he did a Pro RailsCast on implementing the presenter pattern from scratch:
-[RailsCast #287](http://railscasts.com/episodes/287-presenters-from-scratch)
+**And he did a Pro RailsCast on implementing the presenter pattern from scratch:
+[RailsCast #287](http://railscasts.com/episodes/287-presenters-from-scratch)**
 
 
 ### Check out the Interwebs
 
-[Jay Fields about the Presenter Pattern in Rails (2007)](http://blog.jayfields.com/2007/03/rails-presenter-pattern.html)
-[James Golick on ActivePresenter (2008)](http://jamesgolick.com/2008/7/27/introducing-activepresenter-the-presenter-library-you-already-know.html)
-
-[Draper on Github](https://github.com/jcasimir/draper/)
-[Jeff Casimir's talk 'Bow up your views'](http://vimeo.com/27361482)
-
-[Rails Presenters in the Ruby Toolbox](https://www.ruby-toolbox.com/categories/rails_presenters)
+ * [Jay Fields about the Presenter Pattern in Rails (2007)](http://blog.jayfields.com/2007/03/rails-presenter-pattern.html)
+ * [James Golick on ActivePresenter (2008)](http://jamesgolick.com/2008/7/27/introducing-activepresenter-the-presenter-library-you-already-know.html)
+ * [Draper on Github](https://github.com/jcasimir/draper/)
+ * [Jeff Casimir's talk 'Bow up your views'](http://vimeo.com/27361482)
+ * [Rails Presenters in the Ruby Toolbox](https://www.ruby-toolbox.com/categories/rails_presenters)
 
