@@ -19,7 +19,7 @@
 
 %p
   %b Image:
-  = image_tag(@customer.image, :height => '64')
+  = image_tag(@customer.image, :height => '64') if @customer.image.present?
 
 = link_to 'Edit', edit_customer_path(@customer)
 \|
