@@ -1,0 +1,36 @@
+%p#notice= notice
+
+%p
+  %b Username:
+  = @customer.username
+%p
+  %b First name:
+  = @customer.first_name
+%p
+  %b Last name:
+  = @customer.last_name
+%p
+  %b Email:
+  = @customer.email
+%p
+  %b Fon country:
+  = @customer.fon_country
+%p
+  %b Fon city:
+  = @customer.fon_city
+%p
+  %b Fon:
+  = @customer.fon
+%p
+  %b Twitter name:
+  = @customer.twitter_name
+%p
+  %b Image:
+  = @customer.image
+%p
+  %b Is company:
+  = @customer.is_company
+
+= link_to 'Edit', edit_customer_path(@customer)
+\|
+= link_to 'Back', customers_path
