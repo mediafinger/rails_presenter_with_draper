@@ -6,9 +6,14 @@
       = "Company: " + @customer.username
     - else
       = "User: " + @customer.username
+    = @customer.login ? "(is in)" : "(is out)"
+
 
     .cus_img
-      = image_tag(customer_image(@customer), :height => '64')
+      - if @customer.login
+        = image_tag(customer_image(@customer), :height => '64')
+      - else
+        = @customer.is_company ? image_tag('company_logged_out.png', :height => '64') : image_tag('user_logged_out.jpg', :height => '64')
 
   %dl
     %dt Full name:
@@ -18,7 +23,7 @@
     %dd= @customer.is_company ? @customer.email : "N / A"
 
     %dt Fon:
-    %dd= format_phone_number(@customer.fon_country, @customer.fon_city, @customer.fon)
+    %dd= @customer.login ? format_phone_number(@customer.fon_country, @customer.fon_city, @customer.fon) : "N / A"
 
     %dt Twitter:
     %dd= @customer.twitter_name.present? ? twitter_link(@customer.twitter_name) : "N / A"
