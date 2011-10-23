@@ -1,4 +1,9 @@
 class Customer < ActiveRecord::Base
+
+  def to_json
+    # TODO
+  end
+
 end
 
 # == Schema Information

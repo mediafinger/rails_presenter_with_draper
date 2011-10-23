@@ -12,6 +12,7 @@
     %th Twitter name
     %th Image
     %th Is company
+    %th Is logged in
     %th
     %th
     %th
@@ -28,6 +29,7 @@
       %td= customer.twitter_name
       %td= customer.image
       %td= customer.is_company
+      %td= customer.login
       %td= link_to 'Show', customer
       %td= link_to 'Edit', edit_customer_path(customer)
       %td= link_to 'Destroy', customer, :confirm => 'Are you sure?', :method => :delete
@@ -35,3 +37,4 @@
 %br
 
 = link_to 'New Customer', new_customer_path
+
