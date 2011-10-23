@@ -6,6 +6,7 @@ class Customer < ActiveRecord::Base
 
 end
 
+
 # == Schema Information
 #
 # Table name: customers
@@ -23,5 +24,6 @@ end
 #  is_company   :boolean
 #  created_at   :datetime
 #  updated_at   :datetime
+#  login        :boolean
 #
 

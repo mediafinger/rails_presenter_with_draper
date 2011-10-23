@@ -1,7 +1,7 @@
 module CustomersHelper
 
   def format_phone_number(country, city, fon)
-    "+" + country.to_s + " (0)" + city.to_s + " - " + fon.to_s
+    "+#{country} (0)#{city} - #{fon}"
   end
 
   def twitter_link(name)

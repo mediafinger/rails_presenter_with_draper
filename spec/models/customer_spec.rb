@@ -4,6 +4,7 @@ describe Customer do
   pending "add some examples to (or delete) #{__FILE__}"
 end
 
+
 # == Schema Information
 #
 # Table name: customers
@@ -21,5 +22,6 @@ end
 #  is_company   :boolean
 #  created_at   :datetime
 #  updated_at   :datetime
+#  login        :boolean
 #
 

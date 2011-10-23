@@ -6,11 +6,9 @@
     %th First name
     %th Last name
     %th Email
-    %th Fon country
-    %th Fon city
-    %th Fon
+    %th Fon country city #
     %th Twitter name
-    %th Image
+    %th Image URI
     %th Is company
     %th Is logged in
     %th
@@ -23,9 +21,7 @@
       %td= customer.first_name
       %td= customer.last_name
       %td= customer.email
-      %td= customer.fon_country
-      %td= customer.fon_city
-      %td= customer.fon
+      %td= "#{customer.fon_country} #{customer.fon_city} #{customer.fon}"
       %td= customer.twitter_name
       %td= customer.image
       %td= customer.is_company

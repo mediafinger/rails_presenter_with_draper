@@ -29,7 +29,7 @@
     %dd= @customer.twitter_name.present? ? twitter_link(@customer.twitter_name) : "N / A"
 
 .cus_nav
-  = link_to 'Edit', edit_customer_path(@customer)
+  = link_to 'List', customers_path
   \|
-  = link_to 'Back', customers_path
+  = link_to 'Edit', edit_customer_path(@customer)
 
