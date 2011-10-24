@@ -35,19 +35,18 @@ class CustomerDecorator < ApplicationDecorator
   end
 
   def image
-    if customer.login
-      if customer.image.present?
-        customer.image
-      else
-        "rails.png"
-      end
+    case
+    when customer.login && customer.image.present?
+      uri = customer.image
+    when !customer.login && customer.is_company
+      uri = "company_logged_out.png"
+    when !customer.login && !customer.is_company
+      uri = "user_logged_out.jpg"
     else
-      if customer.is_company
-        "company_logged_out.png"
-      else
-        "user_logged_out.jpg"
-      end
+      uri = "rails.png"
     end
+
+    h.image_tag(uri, :height => '64')
   end
 
 
