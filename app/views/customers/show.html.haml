@@ -17,10 +17,10 @@
 
   %dl
     %dt Full name:
-    %dd= @customer.first_name + " " +  @customer.last_name
+    %dd= @customer.name
 
     %dt Email:
-    %dd= @customer.is_company ? @customer.email : "N / A"
+    %dd= @customer.email
 
     %dt Fon:
     %dd= @customer.phone_number

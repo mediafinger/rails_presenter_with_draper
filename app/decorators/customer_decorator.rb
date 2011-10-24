@@ -17,6 +17,14 @@ class CustomerDecorator < ApplicationDecorator
     end
   end
 
+  def name
+    customer.first_name + " " +  customer.last_name
+  end
+
+  def email
+    customer.is_company ? customer.email : "N / A"
+  end
+
   # Accessing Helpers
   #   You can access any helper via a proxy
   #
