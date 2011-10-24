@@ -9,6 +9,14 @@ class CustomerDecorator < ApplicationDecorator
     end
   end
 
+  def phone_number
+    if customer.login
+      "+#{customer.fon_country} (0)#{customer.fon_city} - #{customer.fon}"
+    else
+      "N / A"
+    end
+  end
+
   # Accessing Helpers
   #   You can access any helper via a proxy
   #

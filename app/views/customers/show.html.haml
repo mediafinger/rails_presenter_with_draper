@@ -23,7 +23,7 @@
     %dd= @customer.is_company ? @customer.email : "N / A"
 
     %dt Fon:
-    %dd= @customer.login ? format_phone_number(@customer.fon_country, @customer.fon_city, @customer.fon) : "N / A"
+    %dd= @customer.phone_number
 
     %dt Twitter:
     %dd= @customer.twitter_link
