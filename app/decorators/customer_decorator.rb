@@ -35,12 +35,21 @@ class CustomerDecorator < ApplicationDecorator
   end
 
   def image
-    if customer.image.present?
-      customer.image
+    if customer.login
+      if customer.image.present?
+        customer.image
+      else
+        "rails.png"
+      end
     else
-      "rails.png"
+      if customer.is_company
+        "company_logged_out.png"
+      else
+        "user_logged_out.jpg"
+      end
     end
   end
+
 
   # Accessing Helpers
   #   You can access any helper via a proxy

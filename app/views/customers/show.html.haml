@@ -5,10 +5,7 @@
     = @customer.headline
 
     .cus_img
-      - if @customer.login
-        = image_tag(@customer.image, :height => '64')
-      - else
-        = @customer.is_company ? image_tag('company_logged_out.png', :height => '64') : image_tag('user_logged_out.jpg', :height => '64')
+      = image_tag(@customer.image, :height => '64')
 
   %dl
     %dt Full name:
