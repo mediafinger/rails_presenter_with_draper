@@ -25,6 +25,15 @@ class CustomerDecorator < ApplicationDecorator
     customer.is_company ? customer.email : "N / A"
   end
 
+  def headline
+    login_status = customer.login ? "(is in)" : "(is out)"
+    if customer.is_company
+      "Company: #{customer.username.upcase} #{login_status}"
+    else
+      "User: #{customer.username.downcase} #{login_status}"
+    end
+  end
+
   # Accessing Helpers
   #   You can access any helper via a proxy
   #

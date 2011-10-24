@@ -2,12 +2,7 @@
 .cus_bit
 
   .cus_head
-    - if @customer.is_company
-      = "Company: " + @customer.username.upcase
-    - else
-      = "User: " + @customer.username.downcase
-    = @customer.login ? "(is in)" : "(is out)"
-
+    = @customer.headline
 
     .cus_img
       - if @customer.login
