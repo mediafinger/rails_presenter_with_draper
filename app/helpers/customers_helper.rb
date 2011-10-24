@@ -4,10 +4,6 @@ module CustomersHelper
     "+#{country} (0)#{city} - #{fon}"
   end
 
-  def twitter_link(name)
-    link_to "@" + name, "http://twitter.com/#!/#{name}"
-  end
-
   def customer_image(customer)
     if customer.image.present?
       customer.image

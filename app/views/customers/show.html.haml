@@ -26,7 +26,7 @@
     %dd= @customer.login ? format_phone_number(@customer.fon_country, @customer.fon_city, @customer.fon) : "N / A"
 
     %dt Twitter:
-    %dd= @customer.twitter_name.present? ? twitter_link(@customer.twitter_name) : "N / A"
+    %dd= @customer.twitter_link
 
 .cus_nav
   = link_to 'List', customers_path
