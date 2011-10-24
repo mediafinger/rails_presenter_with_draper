@@ -3,9 +3,9 @@
 
   .cus_head
     - if @customer.is_company
-      = "Company: " + @customer.username
+      = "Company: " + @customer.username.upcase
     - else
-      = "User: " + @customer.username
+      = "User: " + @customer.username.downcase
     = @customer.login ? "(is in)" : "(is out)"
 
 
