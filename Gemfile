@@ -5,7 +5,7 @@ gem 'sqlite3'
 gem 'haml'
 gem 'gravatar_image_tag'
 
-# gem 'draper'
+gem 'draper'
 
 
 group :development do
