@@ -6,27 +6,23 @@
       = "Company: " + @customer.username.upcase
     - else
       = "User: " + @customer.username.downcase
-    = @customer.login ? "(is in)" : "(is out)"
 
 
     .cus_img
-      - if @customer.login
-        = image_tag(customer_image(@customer), :height => '64')
-      - else
-        = @customer.is_company ? image_tag('company_logged_out.png', :height => '64') : image_tag('user_logged_out.jpg', :height => '64')
+      = image_tag(customer_image(@customer), :height => '64', :title => "#{@customer.first_name} #{@customer.last_name}")
 
   %dl
     %dt Full name:
     %dd= @customer.first_name + " " +  @customer.last_name
 
     %dt Email:
-    %dd= @customer.is_company ? @customer.email : "N / A"
+    %dd= @customer.login ? @customer.email : "N / A"
 
     %dt Fon:
     %dd= @customer.login ? format_phone_number(@customer.fon_country, @customer.fon_city, @customer.fon) : "N / A"
 
     %dt Twitter:
-    %dd= @customer.twitter_name.present? ? twitter_link(@customer.twitter_name) : "N / A"
+    %dd= @customer.login && @customer.twitter_name.present? ? twitter_link(@customer.twitter_name) : "N / A"
 
 .cus_nav
   = link_to 'List', customers_path

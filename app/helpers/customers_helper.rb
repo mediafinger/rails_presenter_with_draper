@@ -9,10 +9,10 @@ module CustomersHelper
   end
 
   def customer_image(customer)
-    if customer.image.present?
+    if customer.image.present? && customer.login
       customer.image
     else
-      "rails.png"
+     'user_logged_out.jpg'
     end
   end
 
