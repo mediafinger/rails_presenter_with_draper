@@ -7,7 +7,7 @@
       = "User: " + @customer.username.downcase
 
     .cus_img
-      = image_tag(customer_image(@customer), :height => '64', :title => "#{@customer.first_name} #{@customer.last_name}")
+      = image_tag(@customer.image, :height => '64', :title => @customer.name)
 
   %dl
     %dt Full name:
@@ -17,7 +17,7 @@
     %dd= @customer.login ? @customer.email : "N / A"
 
     %dt Fon:
-    %dd= @customer.login ? format_phone_number(@customer.fon_country, @customer.fon_city, @customer.fon) : "N / A"
+    %dd= @customer.login ? @customer.phone_number : "N / A"
 
     %dt Twitter:
     %dd= @customer.login ? @customer.twitter_link : "N / A"
