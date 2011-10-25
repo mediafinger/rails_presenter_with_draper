@@ -1,13 +1,10 @@
 .cus_bit
 
   .cus_head
-    - if @customer.is_company
-      = "Company: " + @customer.username.upcase
-    - else
-      = "User: " + @customer.username.downcase
+    = @customer.headline
 
     .cus_img
-      = image_tag(@customer.image, :height => '64', :title => @customer.name)
+      = @customer.image
 
   %dl
     %dt Full name:
