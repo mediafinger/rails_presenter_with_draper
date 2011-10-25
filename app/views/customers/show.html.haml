@@ -20,7 +20,7 @@
     %dd= @customer.login ? format_phone_number(@customer.fon_country, @customer.fon_city, @customer.fon) : "N / A"
 
     %dt Twitter:
-    %dd= @customer.login && @customer.twitter_name.present? ? twitter_link(@customer.twitter_name) : "N / A"
+    %dd= @customer.login ? @customer.twitter_link : "N / A"
 
 
 .cus_nav
