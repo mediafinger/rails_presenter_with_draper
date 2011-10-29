@@ -2,7 +2,7 @@
 
 The code was used as example code to demonstrate the decorator pattern in Rails using the example of the gem [Draper](https://github.com/jcasimir/draper/).
 
-You will find all Slides we used for the presentation at the *Railscamp Hamburg 2011* in the folder *Slides* ([PDF](https://github.com/mediafinger/rails_presenter_with_draper/blob/master/slides/kill_your_helpers.pdf))
+You will find all Slides we used for the presentation at the **Railscamp Hamburg 2011** in the folder **slides** ([PDF](https://github.com/mediafinger/rails_presenter_with_draper/blob/master/slides/kill_your_helpers.pdf))
 
 
 ## Overview
