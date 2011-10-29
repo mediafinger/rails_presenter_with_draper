@@ -1,15 +1,15 @@
 # Rails Presenter with Draper
 
-This will become a collection for a talk about the presenter pattern in Rails and using the example of the gem [Draper](https://github.com/jcasimir/draper/).
+The code was used as example code to demonstrate the decorator pattern in Rails using the example of the gem [Draper](https://github.com/jcasimir/draper/).
+
+You will find all Slides we used for the presentation at the *Railscamp Hamburg 2011* in the folder *Slides* ([PDF](https://github.com/mediafinger/rails_presenter_with_draper/blob/master/slides/kill_your_helpers.pdf))
 
 
 ## Overview
 
 1. Reception
-2. Introduce the presenter pattern
-  1. Do it in theory
-  2. Explain the benefits
-3. Show some view code of a normal Rails project
+2. Show some view code of a normal Rails project
+3. Introducing the decorator pattern
 4. Introduce the gem Draper
   1. Show how to add it to the project
   2. Clean up the view bit by bit
