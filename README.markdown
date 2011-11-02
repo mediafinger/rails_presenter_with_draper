@@ -7,7 +7,7 @@ You will find all Slides we used for the presentation at the **Railscamp Hamburg
 
 ## Overview
 
-1. Reception
+1. Reception to 'kill your helpers'
 2. Show some view code of a normal Rails project
 3. Introducing the decorator pattern
 4. Introduce the gem Draper
