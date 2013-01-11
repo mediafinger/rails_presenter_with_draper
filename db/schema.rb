@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(:version => 20111023202246) do
     t.string   "twitter_name"
     t.string   "image"
     t.boolean  "is_company"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
     t.boolean  "login"
   end
 
