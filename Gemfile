@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.10'
+gem 'rails', '3.2.11'
 gem 'sqlite3'
 gem 'haml'
 gem 'gravatar_image_tag'
