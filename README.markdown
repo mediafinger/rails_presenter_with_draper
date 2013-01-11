@@ -4,6 +4,7 @@ The code was used as example code to demonstrate the decorator pattern in Rails 
 
 You will find all Slides we used for the presentation at the **Railscamp Hamburg 2011** in the folder **slides** ([PDF](https://github.com/mediafinger/rails_presenter_with_draper/blob/master/slides/kill_your_helpers.pdf))
 
+_I updated the app to Rails 3.2.11 and draper 0.18.0 without checking, if it still works (sorry, if not)_
 
 ## Overview
 
